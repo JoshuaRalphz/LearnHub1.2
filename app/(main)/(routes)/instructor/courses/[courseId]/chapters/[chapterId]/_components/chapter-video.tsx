@@ -96,7 +96,7 @@ export const ChapterVideoForm = ({
             endpoint="chapterVideo"
             onchange={(url) => {
               if (url) {
-                onSubmit({ videoUrl: url });
+                onSubmit({ videoUrl: url }).then(() => { router.refresh });
               }
             }}
           />
