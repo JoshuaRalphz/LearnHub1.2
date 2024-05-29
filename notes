@@ -1,0 +1,18 @@
+Goto github create repo
+
+paste below
+
+echo "# LearnHub.1.2" >> README.md
+git init
+git add README.md
+
+-- Interval --
+
+git add .
+
+-- Interval --
+
+git commit -m "first commit"
+git branch -M main
+git remote add origin (go to github to see your link)
+git push -u origin main
