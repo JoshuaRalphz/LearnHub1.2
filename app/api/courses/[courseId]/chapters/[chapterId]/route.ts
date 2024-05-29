@@ -10,7 +10,6 @@ const { video } = new Mux({
 });
 
 export async function DELETE(
-  
   req: Request,
   { params }: { params: { courseId: string; chapterId: string } }
 ) {
@@ -20,7 +19,7 @@ export async function DELETE(
     const ownCourse = await db.course.findUnique({
       where: {
         id: params.courseId,
-        userId,
+        userId: userId || undefined, // Fix the type error by using the || undefined syntax
       },
     });
 

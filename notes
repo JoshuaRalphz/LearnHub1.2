@@ -2,7 +2,7 @@ Goto github create repo
 
 paste below
 
-echo "# LearnHub.1.2" >> README.md
+echo "# repoName" >> README.md check at github
 git init
 git add README.md
 
@@ -14,5 +14,9 @@ git add .
 
 git commit -m "first commit"
 git branch -M main
-git remote add origin (go to github to see your link)
+git remote add origin (repoLink) check at github
 git push -u origin main
+
+check at github
+
+If reinitialize this is error delete .git hidden files in the codebase
